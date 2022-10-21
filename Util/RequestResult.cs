@@ -2,7 +2,7 @@ using FluentValidation.Results;
 
 namespace Util
 {
-  public abstract class RequestResult<TData> where TData : class
+  public class RequestResult<TData> where TData : class
   {
     public int StatusCode { get; set; } = StatusCodes.Status200OK;
     public TData Data { get; set; }

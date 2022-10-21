@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace Util
 {
-  public abstract class PagedBaseRequest
+  public class PagedBaseRequest
   {
     [BindRequired]
     public int Page { get; set; } = 0;

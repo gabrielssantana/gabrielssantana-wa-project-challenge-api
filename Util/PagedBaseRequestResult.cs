@@ -1,6 +1,6 @@
 namespace Util
 {
-  public abstract class PagedBaseRequestResult<TData> : RequestResult<TData> where TData : class
+  public class PagedBaseRequestResult<TData> : RequestResult<TData> where TData : class
   {
     public int CurrentPage { get; set; }
     public int PageCount { get; set; }

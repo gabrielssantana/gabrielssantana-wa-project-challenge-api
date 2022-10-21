@@ -11,6 +11,7 @@ namespace Model
     public string Address { get; set; } = string.Empty;
     public int DeliveryTeamId { get; set; }
     // References
+    public ICollection<Product> Products { get; set; }
     public ICollection<OrderProduct> OrderProducts { get; set; }
     public DeliveryTeam DeliveryTeam { get; set; }
     public Order(

@@ -10,6 +10,7 @@ namespace Model
     public string Description { get; set; } = string.Empty;
     public decimal Value { get; set; }
     // References
+    public ICollection<Order> Orders { get; set; }
     public ICollection<OrderProduct> OrderProducts { get; set; }
     public Product(
       string name,
