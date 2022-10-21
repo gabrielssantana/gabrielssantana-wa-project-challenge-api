@@ -8,6 +8,7 @@ namespace AutoMapper
     public ProductProfile()
     {
       CreateMap<Product, CreateProductViewModel>().ReverseMap();
+      CreateMap<Product, ReturnProductViewModel>().ReverseMap();
     }
   }
 }

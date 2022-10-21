@@ -8,6 +8,7 @@ namespace AutoMapper
     public DeliveryTeamProfile()
     {
       CreateMap<DeliveryTeam, CreateDeliveryTeamViewModel>().ReverseMap();
+      CreateMap<DeliveryTeam, ReturnDeliveryTeamViewModel>().ReverseMap();
     }
   }
 }

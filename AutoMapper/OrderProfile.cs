@@ -9,6 +9,7 @@ namespace AutoMapper
     {
       CreateMap<Order, CreateOrderViewModel>().ReverseMap();
       CreateMap<Order, FinishOrderViewModel>().ReverseMap();
+      CreateMap<Order, CreateOrderViewModel>().ReverseMap();
     }
   }
 }

@@ -7,7 +7,7 @@ namespace Validator
   {
     public FinishOrderCommandValidator()
     {
-
+      RuleFor(p => p.OrderId).NotEmpty().WithMessage("OrderId required");
     }
   }
 }
